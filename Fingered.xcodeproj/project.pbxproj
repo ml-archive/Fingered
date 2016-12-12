@@ -10,6 +10,11 @@
 		83B5DC9D1DFEB48500AD38E7 /* Fingered.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B5DC931DFEB48500AD38E7 /* Fingered.framework */; };
 		83B5DCA21DFEB48500AD38E7 /* FingeredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5DCA11DFEB48500AD38E7 /* FingeredTests.swift */; };
 		83B5DCA41DFEB48500AD38E7 /* Fingered.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B5DC961DFEB48500AD38E7 /* Fingered.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83B5DCAF1DFEB49800AD38E7 /* Fingerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5DCAE1DFEB49800AD38E7 /* Fingerable.swift */; };
+		83B5DCB11DFEB5DA00AD38E7 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5DCB01DFEB5DA00AD38E7 /* Hand.swift */; };
+		83B5DCB31DFEB77400AD38E7 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5DCB21DFEB77400AD38E7 /* Ring.swift */; };
+		83B5DCB71DFEB85B00AD38E7 /* KeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B5DCB51DFEB85B00AD38E7 /* KeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83B5DCB81DFEB85B00AD38E7 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5DCB61DFEB85B00AD38E7 /* KeychainWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		83B5DC9C1DFEB48500AD38E7 /* FingeredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingeredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B5DCA11DFEB48500AD38E7 /* FingeredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingeredTests.swift; sourceTree = "<group>"; };
 		83B5DCA31DFEB48500AD38E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B5DCAE1DFEB49800AD38E7 /* Fingerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fingerable.swift; sourceTree = "<group>"; };
+		83B5DCB01DFEB5DA00AD38E7 /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		83B5DCB21DFEB77400AD38E7 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		83B5DCB51DFEB85B00AD38E7 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		83B5DCB61DFEB85B00AD38E7 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 		83B5DC951DFEB48500AD38E7 /* Fingered */ = {
 			isa = PBXGroup;
 			children = (
+				83B5DCAD1DFEB49000AD38E7 /* Source */,
 				83B5DC961DFEB48500AD38E7 /* Fingered.h */,
 				83B5DC971DFEB48500AD38E7 /* Info.plist */,
 			);
@@ -86,6 +97,26 @@
 			path = FingeredTests;
 			sourceTree = "<group>";
 		};
+		83B5DCAD1DFEB49000AD38E7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				83B5DCB41DFEB85200AD38E7 /* External */,
+				83B5DCAE1DFEB49800AD38E7 /* Fingerable.swift */,
+				83B5DCB01DFEB5DA00AD38E7 /* Hand.swift */,
+				83B5DCB21DFEB77400AD38E7 /* Ring.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		83B5DCB41DFEB85200AD38E7 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				83B5DCB51DFEB85B00AD38E7 /* KeychainWrapper.h */,
+				83B5DCB61DFEB85B00AD38E7 /* KeychainWrapper.m */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +124,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B5DCB71DFEB85B00AD38E7 /* KeychainWrapper.h in Headers */,
 				83B5DCA41DFEB48500AD38E7 /* Fingered.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +181,7 @@
 					83B5DC921DFEB48500AD38E7 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = HW27H6H98R;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					83B5DC9B1DFEB48500AD38E7 = {
@@ -198,6 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B5DCB11DFEB5DA00AD38E7 /* Hand.swift in Sources */,
+				83B5DCB81DFEB85B00AD38E7 /* KeychainWrapper.m in Sources */,
+				83B5DCB31DFEB77400AD38E7 /* Ring.swift in Sources */,
+				83B5DCAF1DFEB49800AD38E7 /* Fingerable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -277,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -322,6 +361,8 @@
 		83B5DCA81DFEB48500AD38E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HW27H6H98R;
@@ -334,13 +375,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.Fingered;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
 		83B5DCA91DFEB48500AD38E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HW27H6H98R;
@@ -353,13 +397,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.Fingered;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
 		83B5DCAB1DFEB48500AD38E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HW27H6H98R;
 				INFOPLIST_FILE = FingeredTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +417,7 @@
 		83B5DCAC1DFEB48500AD38E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HW27H6H98R;
 				INFOPLIST_FILE = FingeredTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
